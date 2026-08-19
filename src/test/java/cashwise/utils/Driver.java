@@ -20,6 +20,7 @@ public class Driver {
         String browserType = ConfigReader.getProperty("browser");
         ChromeOptions options = new ChromeOptions();
         options.setAcceptInsecureCerts(true);  // ✅ bypasses SSL errors
+        options.addArguments("--headless");
 
 
         if (driver != null){
